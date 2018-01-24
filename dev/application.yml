@@ -12,7 +12,6 @@ spring:
   data:
     mongodb:
       uri: ${MONGO_URL:mongodb://localhost:27017/local}
-
 hystrix:
   command:
     default:

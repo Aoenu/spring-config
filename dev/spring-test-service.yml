@@ -1,7 +1,7 @@
 server:
   port: ${PORT:8089}
-mybatis:
-  mapper-locations: classpath*:com/hand/**/*Mapper.xml
+#mybatis:
+#  mapper-locations: classpath*:com/hand/**/*Mapper.xml
 spring:
   cloud:
     stream:
