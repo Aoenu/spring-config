@@ -7,7 +7,7 @@ spring:
         springCloudBusInput:
           group: game-packet
   datasource:
-      url: jdbc:mysql://10.213.0.40:3306/dev-gamepacket?characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&maxReconnects=5
+      url: jdbc:mysql://localhost:3306/dev-gamepacket?characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&maxReconnects=5
       username: ${MYSQL_USER:root}
       password: ${MYSQL_PWD:root}
       driver-class-name: com.mysql.jdbc.Driver
