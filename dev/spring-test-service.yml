@@ -13,3 +13,7 @@ spring:
       username: ${MYSQL_USER:root}
       password: ${MYSQL_PWD:root}
       driver-class-name: com.mysql.jdbc.Driver
+pagehelper:
+  row-bounds-with-count: true
+  auto-dialect: true
+  reasonable: false

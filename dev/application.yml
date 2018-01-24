@@ -22,7 +22,7 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 600000
-#logging:
-#  level:
-#    java.sql: debug
-#    com.hand.zhishinet: debug
+logging:
+  level:
+    java.sql: debug
+    com.hand.zhishinet: debug
