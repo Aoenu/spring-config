@@ -24,4 +24,4 @@ hystrix:
 logging:
   level:
     java.sql: debug
-    com.hand.zhishinet: debug
+    com.hand.spring: debug
