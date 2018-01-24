@@ -1,0 +1,28 @@
+spring:
+  mvc:
+    servlet:
+      load-on-startup: 1
+  rabbitmq:
+    host: ${RABBIT_HOST:rabbitmq}
+    port: ${RABBIT_PORT:5672}
+  redis:
+    host: ${REDIS_HOST:10.213.0.42}
+    port: ${REDIS_PORT:6379}
+    database: ${REDIS_DATABASE:12}
+  data:
+    mongodb:
+      uri: ${MONGO_URL:mongodb://localhost:27017/local}
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
+        isolation:
+          thread:
+            timeoutInMilliseconds: 600000
+logging:
+  level:
+    java.sql: debug
+    com.hand.zhishinet: debug
