@@ -5,7 +5,7 @@ spring:
     stream:
       bindings:
         springCloudBusInput:
-          group: game-packet
+          group: spring-test-service
   datasource:
       url: jdbc:mysql://localhost:3306/dev-gamepacket?characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&maxReconnects=5
       username: ${MYSQL_USER:root}
