@@ -14,7 +14,6 @@ zuul:
     spring-test-service:
       path: /api-test/**
       serviceId: spring-test-service
-      stripPrefix: false
 logging:
   level:
     com.netflix: DEBUG
