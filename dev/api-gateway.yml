@@ -12,7 +12,7 @@ zuul:
 #    connect-timeout-millis: 60000
   routes:
     spring-test-service:
-      path: /api/service/**
+      path: /api-test/**
       serviceId: spring-test-service
       stripPrefix: false
 logging:
