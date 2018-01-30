@@ -1,15 +1,15 @@
 server:
   port: ${PORT:8080}
-  connection-timeout: 3600000
-  session:
-    timeout: 1800
+#  connection-timeout: 3600000
+#  session:
+#    timeout: 1800
 zuul:
-  max:
-    host:
-      connections: 500
-  host:
-    socket-timeout-millis: 60000
-    connect-timeout-millis: 60000
+#  max:
+#    host:
+#      connections: 500
+#  host:
+#    socket-timeout-millis: 60000
+#    connect-timeout-millis: 60000
   routes:
     spring-test-service:
       path: /api/service/**
