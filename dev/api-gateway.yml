@@ -12,8 +12,16 @@ zuul:
 #    connect-timeout-millis: 60000
   routes:
     spring-test-service:
-      path: /api-test/**
+      path: /api/test/**
       serviceId: spring-test-service
 logging:
   level:
     com.netflix: DEBUG
+    com.hand: DEBUG
+hand:
+  security:
+    token:
+      expiration-time: 10 # 分钟 1440
+      refresh-exp-time: 30 # 分钟 2880
+      issuer: springstudy
+      signing-key: hand
