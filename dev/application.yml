@@ -3,8 +3,10 @@ spring:
     servlet:
       load-on-startup: 1
   rabbitmq:
-    host: ${RABBIT_HOST:rabbitmq}
+    host: ${RABBIT_HOST:localhost}
     port: ${RABBIT_PORT:5672}
+    username: guest
+    password: guest
   redis:
     host: ${REDIS_HOST:localhost} # Redis服务器地址
     port: ${REDIS_PORT:6379}      # Redis服务器连接端口
